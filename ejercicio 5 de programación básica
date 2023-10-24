@@ -1,0 +1,32 @@
+public class ejercicio5 {
+    public static void main(String[] args){
+                int n = 40; // Número de números primos que deseas sumar
+                int contador = 0; // Contador de números primos encontrados
+                int numero = 2; // Comenzamos desde el primer número primo
+                long suma = 0; // Inicializamos la suma en 0
+
+                while (contador < n) {
+                    if (esPrimo(numero)) {
+                        suma += numero;
+                        contador++;
+                    }
+                    numero++;
+                }
+
+                System.out.println("La suma de los primeros " + n + " números primos es: " + suma);
+            }
+
+            // Función para verificar si un número es primo
+            public static boolean esPrimo(int num) {
+                if (num <= 1) {
+                    return false;
+                }
+                for (int i = 2; i * i <= num; i++) {
+                    if (num % i == 0) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+
