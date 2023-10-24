@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class ejercicio10 {
+    public static void main(String[] args) {
+        // factorial
+        //5! = 5*4*3*2
+        Scanner scanner =  new Scanner(System.in);
+        System.out.println("que numero quieres hacer el factorial");
+        long num = scanner.nextLong();
+
+        long resultat = 1;
+        for  (int i = 1; i<= num; i++){
+            resultat = resultat *i;
+        }
+
+        System.out.println(resultat);
+
+    }
+}
