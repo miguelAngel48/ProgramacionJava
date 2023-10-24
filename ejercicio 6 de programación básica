@@ -1,0 +1,15 @@
+public class ejercicio6 {
+    public static void main(String[] args) {
+        int contador = 0;
+        int numero = 1;
+
+        while(contador < 30){
+            if(numero % 5 == 0 && numero % 3 != 0 ){
+                System.out.println(numero);
+                contador++;
+            }
+           numero++;
+        }
+
+    }
+}
